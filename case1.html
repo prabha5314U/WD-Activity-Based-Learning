@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhas Ramaphalam - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #252b42;
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: #5b55d9;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #252b42;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            color: #5b55d9;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .home {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .home-text {
+            max-width: 650px;
+        }
+
+        .welcome {
+            color: #5b55d9;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 12px 0;
+        }
+
+        h1 span, .section-title span {
+            color: #5b55d9;
+        }
+
+        .intro {
+            color: #666d80;
+            margin: 18px 0 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #5b55d9;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            margin: 5px 5px 5px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            max-width: 850px;
+            margin: auto;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px #0000000c;
+        }
+
+        .card p {
+            color: #666d80;
+            margin: 8px 0;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 12px 22px;
+            border: 1px solid #e4e5f2;
+            border-radius: 8px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .project {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            border-bottom: 4px solid #5b55d9;
+        }
+
+        .project p {
+            color: #666d80;
+            margin-top: 10px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #5b55d9;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #252b42;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 750px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .home {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Prabhas</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <p class="welcome">HELLO, WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm <span>Prabhas Ramaphalam</span></h1>
+            <h2>First Year B.Tech Student</h2>
+            <p class="intro">
+                I am a beginner in web development and technology.
+                I enjoy learning new things and creating simple projects.
+            </p>
+            <a class="btn" href="#projects">My Projects</a>
+            <a class="btn" href="#contact">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="card">
+            <p>
+                Hi! I am Prabhas Ramaphalam, a first-year B.Tech student
+                interested in computers and technology. I am learning
+                HTML and CSS and made this portfolio to practice my
+                web development skills. I want to learn more programming
+                languages and create useful projects in the future.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">C Programming</div>
+            <div class="skill">Basic Python</div>
+            <div class="skill">Communication</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Personal Portfolio</h3>
+                <p>A personal website created using HTML and CSS.</p>
+            </div>
+            <div class="project">
+                <h3>Student Profile Page</h3>
+                <p>A simple webpage displaying student details and interests.</p>
+            </div>
+            <div class="project">
+                <h3>Calculator Layout</h3>
+                <p>A beginner practice project for designing a calculator interface.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">My <span>Education</span></h2>
+        <div class="card">
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p><strong>College:</strong> NRI INSTITUTE OF TECHNOLOGY</p>
+            <p><strong>Branch:</strong> CSM</p>
+            <p><strong>Year:</strong> First Year</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="card contact">
+            <p>Feel free to contact me.</p>
+            <p>
+                <strong>Mobile:</strong>
+                <a href="tel:8309997201">8309997201</a>
+            </p>
+            <p>
+                <strong>Gmail:</strong>
+                <a href="mailto:prabhas@gmail.com">prabhas@gmail.com</a>
+            </p>
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/">Visit my GitHub</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Prabhas Ramaphalam | 2026</p>
+    </footer>
+</body>
+</html>
