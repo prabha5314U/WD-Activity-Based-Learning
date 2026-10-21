@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sweet Cake Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff0f3;
+            text-align: center;
+        }
+
+        header {
+            background-color: #d6336c;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #ffb3c6;
+            padding: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 15px;
+        }
+
+        .home {
+            padding: 40px 20px;
+        }
+
+        h2 {
+            color: #d6336c;
+        }
+
+        .cakes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .cake {
+            background-color: white;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #00000020;
+        }
+
+        .cake img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .price {
+            color: #d6336c;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #d6336c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .about, .contact {
+            padding: 30px 20px;
+        }
+
+        footer {
+            background-color: #d6336c;
+            color: white;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .cakes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sweet Cake Shop</h1>
+        <p>Fresh Cakes Made with Love!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cakes">Bakery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="home" id="home">
+        <h2>Welcome to Our Bakery</h2>
+        <p>Enjoy delicious cakes, puffs, pastries and more.</p>
+    </div>
+
+    <h2 id="cakes">Our Bakery Items</h2>
+
+    <div class="cakes">
+        <div class="cake">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p class="price">₹450</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="cake">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Strawberry Cake">
+            <h3>Strawberry Cake</h3>
+            <p class="price">₹500</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="cake">
+            <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Cupcakes">
+            <h3>Cupcakes</h3>
+            <p class="price">₹200</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="cake">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Golden egg puff pastry">
+            <h3>Egg Puff</h3>
+            <p class="price">₹35</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="cake">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Freshly baked Dilpasand pastry">
+            <h3>Dilpasand</h3>
+            <p class="price">₹40</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="cake">
+            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484d4?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Freshly baked vegetable puff">
+            <h3>Veg Puff</h3>
+            <p class="price">₹30</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="cake">
+            <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Golden samosas">
+            <h3>Samosa</h3>
+            <p class="price">₹25</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="cake">
+            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Freshly baked cookies">
+            <h3>Cookies</h3>
+            <p class="price">₹120</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <h2>About Us</h2>
+        <p>We make fresh and tasty cakes for birthdays and special occasions.</p>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Owner: Prabhas Ramaphalam</p>
+        <p>Phone: 8309997201</p>
+        <p>Email: sweets@gmail.com</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Sweet Cake Shop</p>
+    </footer>
+
+</body>
+</html>
