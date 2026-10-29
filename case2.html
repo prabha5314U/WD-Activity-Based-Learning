@@ -1,193 +1,219 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sweet Cake Shop</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #fff0f3;
-            text-align: center;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Crumb Bakery</title>
 
-        header {
-            background-color: #d6336c;
-            color: white;
-            padding: 20px;
-        }
+<style>
 
-        nav {
-            background-color: #ffb3c6;
-            padding: 12px;
-        }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fffaf3;
+    }
 
-        nav a {
-            text-decoration: none;
-            color: #333;
-            margin: 15px;
-        }
+    .navbar {
+        background-color: #8b4513;
+        padding: 18px;
+        overflow: hidden;
+    }
 
-        .home {
-            padding: 40px 20px;
-        }
+    .logo {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+    }
 
-        h2 {
-            color: #d6336c;
-        }
+    .menu {
+        float: right;
+    }
 
-        .cakes {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 20px;
-        }
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+    }
 
-        .cake {
-            background-color: white;
-            width: 200px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px #00000020;
-        }
+    .menu a:hover {
+        color: #ffd27f;
+        text-decoration: underline;
+    }
 
-        .cake img {
-            width: 100%;
-            height: 130px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
+    .hero {
+        background-color: #f5deb3;
+        text-align: center;
+        padding: 70px 20px;
+        border-bottom: 5px solid #8b4513;
+    }
 
-        .price {
-            color: #d6336c;
-            font-weight: bold;
-        }
+    .hero h1 {
+        color: #5a2d0c;
+        font-size: 36px;
+    }
 
-        button {
-            background-color: #d6336c;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-        }
+    .hero p {
+        color: #333;
+    }
 
-        .about, .contact {
-            padding: 30px 20px;
-        }
+    .about {
+        text-align: center;
+        padding: 50px;
+    }
 
-        footer {
-            background-color: #d6336c;
-            color: white;
-            padding: 15px;
-        }
+    .about h2 {
+        color: #5a2d0c;
+        text-decoration: underline;
+        text-decoration-color: #e8a14c;
+    }
 
-        @media (max-width: 600px) {
-            .cakes {
-                flex-direction: column;
-                align-items: center;
-            }
+    .products {
+        background-color: white;
+        text-align: center;
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
 
-            nav a {
-                margin: 6px;
-            }
-        }
-    </style>
+    .products h2 {
+        color: #5a2d0c;
+        width: 100%;
+        text-decoration: underline;
+        text-decoration-color: #e8a14c;
+    }
+
+    .product-box {
+        background-color: #fffaf3;
+        padding: 25px;
+        margin: 10px;
+        width: 220px;
+        min-height: 190px;
+        box-sizing: border-box;
+        box-shadow: 0px 3px 8px gray;
+        border-radius: 15px;
+    }
+
+    .product-box h3 {
+        color: #5a2d0c;
+    }
+
+    .price {
+        display: block;
+        margin-top: 12px;
+        font-weight: bold;
+        color: #8b4513;
+        font-size: 1.1rem;
+    }
+
+    .gallery {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .gallery h2 {
+        color: #5a2d0c;
+        text-decoration: underline;
+        text-decoration-color: #e8a14c;
+    }
+
+    .gallery img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        margin: 15px;
+        border: 3px solid #8b4513;
+        border-radius: 15px;
+        box-shadow: 0px 3px 8px gray;
+    }
+
+    .credit {
+        font-size: 12px;
+        color: #777;
+    }
+
+    .contact {
+        background-color: #5a2d0c;
+        color: white;
+        text-align: center;
+        padding: 30px;
+    }
+
+</style>
+
 </head>
 <body>
 
-    <header>
-        <h1>Sweet Cake Shop</h1>
-        <p>Fresh Cakes Made with Love!</p>
-    </header>
+    <div class="navbar">
+        <span class="logo">Sweet Crumb Bakery</span>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#cakes">Bakery</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="home" id="home">
-        <h2>Welcome to Our Bakery</h2>
-        <p>Enjoy delicious cakes, puffs, pastries and more.</p>
+        <span class="menu">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </span>
     </div>
 
-    <h2 id="cakes">Our Bakery Items</h2>
-
-    <div class="cakes">
-        <div class="cake">
-            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Chocolate Cake">
-            <h3>Chocolate Cake</h3>
-            <p class="price">₹450</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cake">
-            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Strawberry Cake">
-            <h3>Strawberry Cake</h3>
-            <p class="price">₹500</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cake">
-            <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Cupcakes">
-            <h3>Cupcakes</h3>
-            <p class="price">₹200</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cake">
-            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Golden egg puff pastry">
-            <h3>Egg Puff</h3>
-            <p class="price">₹35</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cake">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Freshly baked Dilpasand pastry">
-            <h3>Dilpasand</h3>
-            <p class="price">₹40</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cake">
-            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484d4?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Freshly baked vegetable puff">
-            <h3>Veg Puff</h3>
-            <p class="price">₹30</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cake">
-            <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Golden samosas">
-            <h3>Samosa</h3>
-            <p class="price">₹25</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cake">
-            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Freshly baked cookies">
-            <h3>Cookies</h3>
-            <p class="price">₹120</p>
-            <button>Order Now</button>
-        </div>
+    <div class="hero">
+        <h1>Sweet Crumb Bakery</h1>
+        <p>Freshly Baked. Made with Love. Served Warm.</p>
     </div>
 
     <div class="about" id="about">
         <h2>About Us</h2>
-        <p>We make fresh and tasty cakes for birthdays and special occasions.</p>
+        <p>Sweet Crumb Bakery has been baking fresh breads, cakes and pastries since 2015.<br>
+        We use simple, quality ingredients and traditional recipes, baked every morning.<br>
+        Drop in for a warm croissant or order a custom cake for your celebration.</p>
     </div>
+
+    <div class="products" id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="product-box">
+            <h3>Butter Croissant</h3>
+            Flaky, golden and<br>baked fresh daily
+            <span class="price">₹80</span>
+        </div>
+
+        <div class="product-box">
+            <h3>Chocolate Cake</h3>
+            Rich chocolate sponge<br>with creamy ganache
+            <span class="price">₹450</span>
+        </div>
+
+        <div class="product-box">
+            <h3>Fruit Cupcake</h3>
+            Soft vanilla cupcake<br>topped with fresh fruit
+            <span class="price">₹60</span>
+        </div>
+
+
+        <div class="product-box">
+            <h3>Choco Cookies</h3>
+            Crunchy cookies loaded with chocolate chips
+            <span class="price">₹100</span>
+        </div>
+
+        
+    </div>
+
+    <div class="gallery" id="gallery">
+        <h2>Gallery</h2>
+
+        <img src="https://images.unsplash.com/photo-1579005007697-75b2fe2c88e7?fm=jpg&q=70&w=700&auto=format&fit=crop" alt="Morning in the bakery">
+        <img src="https://images.unsplash.com/photo-1702090888946-d330cd452f5e?fm=jpg&q=70&w=700&auto=format&fit=crop" alt="Croissant on a plate next to honey">
+        <img src="https://images.unsplash.com/photo-1615455732143-1c5f4cc6e230?fm=jpg&q=70&w=700&auto=format&fit=crop" alt="Chocolate cupcake with cream">
+        <img src="https://images.unsplash.com/photo-1586985290301-8db40143d525?fm=jpg&q=70&w=700&auto=format&fit=crop" alt="Cupcake with pink icing">
 
     <div class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Owner: Prabhas Ramaphalam</p>
-        <p>Phone: 8309997201</p>
-        <p>Email: sweets@gmail.com</p>
+        <h3>Contact Us</h3>
+        <p>12 Baker Street, Your City<br>
+        Phone: +91 98765 43210<br>
+        Open daily: 7:00 AM – 9:00 PM</p>
+        <p>&copy; 2026 Sweet Crumb Bakery</p>
     </div>
-
-    <footer>
-        <p>© 2026 Sweet Cake Shop</p>
-    </footer>
 
 </body>
 </html>
